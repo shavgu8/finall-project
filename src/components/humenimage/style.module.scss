@@ -1,0 +1,134 @@
+
+.humen-img-conteiner {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+
+    box-sizing: border-box;
+    .left-div {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        .left-div-h1 {
+            width: 80%;
+
+            h1 {
+                text-transform: uppercase;
+                color: black;
+                font-weight: 700;
+                font-size: 40px;
+
+            }
+
+        }
+
+        .left-div-p {
+            width: 80%;
+            height: 175px;
+
+            p {
+                color: #979797;
+                font-size: 15px;
+            }
+        }
+    }
+
+    .right-div {
+        width: 50%;
+
+        .first-image {
+            display: none;
+           
+        }
+
+        img {
+            width: 100%;
+            border-radius: 8px;
+
+
+        }
+    }
+
+
+}
+
+@media (max-width:550px) {
+
+
+    main {
+        .humen-img-conteiner {
+            margin-bottom: 150px;
+
+            box-sizing: border-box;
+            .right-div{
+                img{
+                    width: 327px;
+                    height: 300px;
+                }
+            }
+            .left-div {
+                .left-div-h1 {
+                    h1 {
+                        font-size:28px;
+                    }
+                    p{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:1024px) {
+    main{
+        
+        .humen-img-conteiner {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            max-width: 100%;
+
+
+            .first-image {
+                display: block;
+               
+            }
+
+
+            .right-div {
+                width: 100%;
+                height: 400px;
+                
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 8px;
+                 
+                }
+            }
+
+            .left-div {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: flex-start;
+                h1{
+                    text-align: center;
+                }
+                p {
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+
+                }
+            }
+        }
+
+    }
+}

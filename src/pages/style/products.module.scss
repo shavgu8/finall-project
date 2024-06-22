@@ -1,0 +1,254 @@
+:root {
+    --tomato-80: #D87D4A;
+    --black--: #000000;
+
+}
+
+
+
+.headphone-page{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #F2F2F2;
+    gap: 200px;
+    header{
+        width: 100%;
+        height: 240px;
+        box-sizing: border-box;
+        padding: 0;
+        background-color: #000000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+         
+        h2{
+            color: white;
+            font-weight: bold;
+            font-size: 40px;
+            text-transform: uppercase;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            
+        }
+    }
+    main{
+        width: 100%;
+      
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        
+        margin: 0;
+     
+        box-sizing: border-box;
+        padding: 4em 10em;
+        #id{
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        .first-div{
+             width: 100%;
+             gap: 100px;
+             box-sizing: border-box;
+             display: flex;
+             align-items: center;
+             justify-content: space-between;
+             
+        
+            .left-div{
+                width: 50%;
+                background-color: #F1F2F1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 540px;
+                border-radius: 8px;
+              
+            }
+            .right-div{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                 padding: 0;
+                 margin: 0;
+                 gap: 20px;
+               h3{
+                color: var(--tomato-80);
+                font-size: 14px;
+                text-transform: uppercase;
+                letter-spacing: 5px;
+                margin: 0;
+                padding: 0;
+               }
+               h1{
+                padding: 0;
+                margin: 0;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                span{
+                    color: #000000;
+                    font-weight: bold;
+                    font-size: 40px;
+                    text-transform: uppercase;
+                    
+                }
+               }
+               p{
+                color: #808080;
+                width: 92%;
+                padding: 0;
+                margin: 0;
+               }
+            }
+
+    }
+    }
+}
+
+
+
+@media (max-width:1340px) {
+    .headphone-page{
+        main{
+           box-sizing: border-box;
+           padding: 4em 10em;
+        }
+    }
+}
+     
+@media (max-width:1300px) {
+    .headphone-page{
+        main{
+           box-sizing: border-box;
+           padding: 4em 9em;
+        }
+    }
+}
+@media (max-width:1150px) {
+    .headphone-page{
+        main{
+           box-sizing: border-box;
+           padding: 4em 8em;
+        }
+    }
+}
+
+@media (max-width:1100px) {
+    .headphone-page{
+        main{
+           box-sizing: border-box;
+           padding: 4em 7em;
+        }
+    }
+}
+@media (max-width:900px) {
+    .headphone-page{
+        main{
+           box-sizing: border-box;
+           padding: 0 6em;
+        }
+    }
+}
+@media (max-width:1024px) {
+    .main-page{
+        display: flex;
+        flex-direction: column;
+        gap: 200px;
+    }
+    .headphone-page{
+        
+        main{
+           box-sizing: border-box;
+           padding: 0 2em;
+         
+           #id{
+            display: flex;
+            flex-direction:column;
+        }
+           .first-div{
+             gap: 50px;
+             display: flex;
+             flex-direction: column;
+             
+            .left-div{
+              width: 100%;
+              height: 80%;
+              padding: 50px 0;
+              box-sizing: border-box;
+              img{
+                width: 220px;
+                height: 243px;
+              }
+            }
+            .right-div{
+                width: 100%;
+                margin: 0 auto;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+               h1{
+                text-align: center;
+                margin: 0;
+              padding: 0;
+               }
+            }
+
+    }
+        }
+    }
+}
+@media (max-width:768px) {
+    .headphone-page{
+    
+        main{
+gap: 150px;
+        }
+    }
+    }
+
+@media (max-width:550px) {
+    .headphone-page{
+        display: flex;
+
+        padding: 0;
+        margin: 0;
+        header{
+            width: 100%;
+            height: 100px;
+            h2{
+                font-size: 28px;
+            }
+        }
+        main{
+            gap: 100px;
+            .first-div{
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                
+                gap: 20px;
+                .left-div{
+                    height: 350px;
+                }
+                .right-div{
+                    gap: 15px;
+                    h1{
+                        span{
+                            font-size: 28px;
+                            margin: 0;
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

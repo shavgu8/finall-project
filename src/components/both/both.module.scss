@@ -1,0 +1,14 @@
+.both{
+    padding: 8em 12.25em;
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+
+
+}
+@media (max-width:1024px) {
+    .both{
+        padding: 2em;
+       
+    }
+}

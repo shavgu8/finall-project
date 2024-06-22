@@ -1,0 +1,112 @@
+ .header{
+    padding: 0 12.35em;
+    background-color: #141414;
+    border-bottom: 1px solid #141414;
+    
+ }
+.navbar{
+    width: 100%;
+    border-bottom: 1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .brand{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h2{
+            color: white;
+            font-size: 28px;
+        }
+        .container {
+            display: none;
+            cursor: pointer;
+            
+          }
+          
+          .bar1, .bar2, .bar3 {
+            width: 35px;
+            height: 5px;
+            background-color: #333;
+            margin: 6px 0;
+            transition: 0.4s;
+          }
+    }
+    .navigation{
+       width: 430px;
+       margin-right: 120px;
+       box-sizing: border-box;
+        nav{
+            width: 100%;
+            
+            ul{
+                display: flex;
+                justify-content: space-between;
+               
+                li{
+                    color: white;
+                    list-style-type: none;
+                    font-size: 13px;
+                    text-transform: uppercase;
+                    
+                }
+                li:hover{
+                    color: #D87D4A;
+                }
+            }
+        }
+    }
+}
+@media (max-width:1024px) {
+    .navbar{
+        .navigation{
+            display: none;
+        }
+        .brand{
+            width: 200px;
+            display: flex;
+            justify-content: space-between;
+            .container{
+                display: block;
+            }
+        }
+    }
+}
+@media (max-width:550px) {
+    .navbar{
+        position: relative;
+        height: 100px;
+        .brand{
+            h2{
+                position: absolute;
+                left: 50%;
+                transform: translate(-50%);
+            }
+        }
+    }
+}
+
+@media (max-width:1340px) {
+
+        .header{
+            padding: 0 10em;
+          } 
+}
+@media (max-width:1300px) {
+  
+        .header{
+            padding:0 9em ;
+          } 
+}
+@media (max-width:1100px) {
+
+        .header{
+            padding:0 8em ;
+          } 
+}
+
+@media (max-width:1024px) {
+        .header{
+            padding: 0 2em;
+        }
+}
